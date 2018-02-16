@@ -1,0 +1,10 @@
+<div>
+  <span id="headline">To Do List</span>
+  <br>
+  <span>A place to store the things you have to do!</span>
+    <task-list todo-list="$ctrl.todoList"></task-list>
+    <form ng-sumbit="$ctrl.addToDo($ctrl.task)">
+      <input type="text" placeholder="Add your to-do" ng-model="$ctrl.task">
+      <button id="addButton" ng-click="$ctrl.addToDo($ctrl.task)">Add</button>
+    </form>
+</div>

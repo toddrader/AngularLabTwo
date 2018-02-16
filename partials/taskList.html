@@ -1,0 +1,6 @@
+<div id="livearea">
+  <input type="text" placeholder="Filter your to-dos" ng-model="filterTask">
+    <ol >
+      <li ng-repeat="task in $ctrl.todoList | filter: filterTask track by $index" hoverState>{{ task }}<a ng-click="$ctrl.removeToDo($index)" href=""><i class="material-icons">clear</i></a></li>
+    </ol>
+</div>
